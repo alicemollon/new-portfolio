@@ -1,4 +1,14 @@
-$(window).load(function() {
+// $(window).load(function() {
+
+// 		$('.grid').isotope({
+// 		columnWidth: '.grid-sizer',
+// 		itemSelector: '.item',
+// 		percentPosition: true,
+// 		isAnimated: !Modernizr.csstransitions
+// 	});
+
+$(document).ready(function() {
+		var $grid = $('.grid').imagesLoaded( function() {
 
 		$('.grid').isotope({
 		columnWidth: '.grid-sizer',
@@ -6,6 +16,8 @@ $(window).load(function() {
 		percentPosition: true,
 		isAnimated: !Modernizr.csstransitions
 	});
+});
+
 
 $('.trigger').on('click', function() {
 	$('nav').slideToggle('slow');
