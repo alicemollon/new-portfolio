@@ -9,6 +9,25 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #Fff;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 30;
+  max-width: 600px;
+}
+
 section.container {
   margin: 50px 50px 0px 50px;
   height: 80px; }
