@@ -16,8 +16,7 @@ html {
   background-color: #Fff;
   z-index: 10;
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 .logo {
   position: absolute;
@@ -25,8 +24,7 @@ html {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 30;
-  max-width: 600px;
-}
+  max-width: 600px; }
 
 section.container {
   margin: 50px 50px 0px 50px;
@@ -239,6 +237,8 @@ footer p {
   .trigger img {
     width: 20px; }
 
+  .logo {
+    max-width: 250px; }
 }
 
 
