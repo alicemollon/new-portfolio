@@ -9,7 +9,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.progress {
+.loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,13 +18,36 @@ html {
   height: 100%;
   width: 100%; }
 
-.logo {
+.balls {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  z-index: 30;
-  max-width: 600px; }
+  z-index: 30; }
+
+.ball-1, .ball-2, .ball-3 {
+  display: inline-block;
+  margin: auto 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  -webkit-animation: loading 0.5s infinite ease-in-out alternate;
+  -moz-animation: loading 0.5s infinite ease-in-out alternate; }
+
+.ball-1 {
+  background-color: #F54D0D;}
+
+.ball-2 {
+  background-color: #FECE53;
+  -webkit-animation-delay: 0.25s; }
+
+.ball-3 {
+  background-color: #779FFF;
+ -webkit-animation-delay: 0.5s; }
+
+@-webkit-keyframes loading {
+  0% {-webkit-transform: translateY(0%);}
+  100% {-webkit-transform: translateY(-90%);} }
 
 section.container {
   margin: 50px 50px 0px 50px;
@@ -240,6 +263,4 @@ footer p {
   .logo {
     max-width: 250px; }
 }
-
-
 
