@@ -7,7 +7,7 @@
 // 		isAnimated: !Modernizr.csstransitions
 // 	});
 
-$(document).ready(function() {
+$(window).load(function() {
 		var $grid = $('.grid').imagesLoaded( function() {
 
 		$('.grid').isotope({
